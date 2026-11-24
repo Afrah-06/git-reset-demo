@@ -1,12 +1,12 @@
 # Git and Reset Lab
 
-This repository contains `index.html` and records the Git history exercise.
+This repository contains the `index.html` project and a record of the Git history exercise.
 
 ## Project
 
 `index.html` is a simple page with a heading and a short description.
 
-## Commit sequence before the reset
+## Three project commits before the reset
 
 1. `Add starter HTML page`
 2. `Add page description`
@@ -14,16 +14,10 @@ This repository contains `index.html` and records the Git history exercise.
 
 I used `git log --oneline` to view the history. Before the reset, the three project commits appeared in that order, newest first.
 
-## Undo the latest commit
+## Reset the latest commit
 
-The last project commit was undone with:
+I used `git reset --hard HEAD~1` to undo the last project commit, then ran `git log --oneline` again. The reset removed `Add footer` from the current branch, leaving the starter page and description commits.
 
-```text
-git reset --hard HEAD~1
-```
+## Compare the versions
 
-Then I ran `git log --oneline` again. The reset removed `Add footer` from the current branch, leaving the starter page and description commits.
-
-## Final project state
-
-The `main` branch has the page after the reset. This README was added afterward so the repository link contains the project steps and the reset command.
+The `main` branch shows the final page after the reset, without the footer. Switch to the `before-reset` branch using GitHub’s branch selector to see the page with the footer, representing the third project commit.
