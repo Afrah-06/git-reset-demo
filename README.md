@@ -20,4 +20,4 @@ I used `git reset --hard HEAD~1` to undo the last project commit, then ran `git 
 
 ## Compare the versions
 
-The `main` branch shows the final page after the reset, without the footer. Switch to the `before-reset` branch using GitHub’s branch selector to see the page with the footer, representing the third project commit.
+The `main` branch shows the final page after the reset, without the footer. Switch to the `three-commits-before-reset` branch using GitHub’s branch selector to see the page with the footer and its three project commits.
